@@ -1,0 +1,239 @@
+; ZipMaster Component Help
+; Copyright © 1998-2004 TZipMaster by Russell Peters  v1.78  Sep, 30, 2004
+
+; This help file was created with HelpScribble 7.3.2
+; Licensed to: Russell Peters
+
+; HelpScribble is copyright (c) 1996-2004  Jan Goyvaerts
+; Visit http://www.helpscribble.com/ for more information
+
+
+[OPTIONS]
+REPORT=YES
+BMROOT=e:\DelphiZip\ZipMstr1780\HelpSrc
+COMPRESS=True
+LCID=0x0C09
+CNT=ZipMaster.cnt
+COPYRIGHT=Copyright © 1998-2004 TZipMaster by Russell Peters  v1.78  Sep, 30, 2004
+ROOT=E:\DELPHI~1\ZIE682~1\HelpSrc
+TITLE=ZipMaster Component Help
+
+[CONFIG]
+BrowseButtons()
+CB(`About_Btn',`&About',`JI(`',`TZipMaster_Contact')')
+SetHelpOnFile("ZipMstr.HLP")
+AI(`mnu_options',`1000',`List PMEs &Alphabetically',`UI(`1002'):UI(`1003'):CI(`1000'):CI(`1001'):SaveMark("ListAlphabetically")')
+AI(`mnu_floating',`1001',`List PMEs &Alphabetically',`UI(`1002'):UI(`1003'):CI(`1000'):CI(`1001'):SaveMark("ListAlphabetically")')
+AI(`mnu_options',`1002',`List PMEs &By Object',`UI(`1000'):UI(`1001'):CI(`1002'):CI(`1003'):IF(IsMark("ListAlphabetically"),`DeleteMark("ListAlphabetically")')')
+AI(`mnu_floating',`1003',`List PMEs &By Object',`UI(`1000'):UI(`1001'):CI(`1002'):CI(`1003'):IF(IsMark("ListAlphabetically"),`DeleteMark("ListAlphabetically")')')
+CI(`1002')
+CI(`1003')
+
+[WINDOWS]
+main="TZipMaster Help",(425,350,578,616),27904,(255,255,226),(192,192,192),f2
+pme="Properties, Methods and Events.",(211,350,213,616),4,(255,255,226),(255,255,0)
+example="Example",(425,100,578,300),4,,
+
+[FILES]
+E:\DELPHI~1\ZIE682~1\HelpSrc\ZIPMAS~1.RTF
+
+[MAP]
+Scribble10   10
+Scribble20   20
+Scribble30   30
+TZipMaster_Contact   40
+Scribble50   50
+Scribble60   60
+Scribble70   70
+Scribble80   80
+Scribble90   90
+Scribble100   100
+Scribble110   110
+Scribble120   120
+Scribble130   130
+Scribble140   140
+Scribble150   150
+Scribble160   160
+Scribble170   170
+Scribble180   180
+Scribble190   190
+Scribble200   200
+Scribble210   210
+Scribble220   220
+Scribble230   230
+Scribble240   240
+Scribble250   250
+Scribble260   260
+Scribble270   270
+Scribble280   280
+Scribble290   290
+Scribble300   300
+Scribble310   310
+Scribble320   320
+Scribble330   330
+Scribble340   340
+Scribble350   350
+Scribble360   360
+Scribble370   370
+Scribble380   380
+Scribble390   390
+Scribble400   400
+Scribble410   410
+Scribble420   420
+Scribble430   430
+Scribble440   440
+Scribble450   450
+Scribble460   460
+Scribble470   470
+Scribble480   480
+Scribble490   490
+Scribble500   500
+Scribble510   510
+Scribble520   520
+Scribble530   530
+Scribble540   540
+Scribble550   550
+Scribble560   560
+Scribble570   570
+Scribble580   580
+Scribble590   590
+Scribble600   600
+Scribble610   610
+Scribble620   620
+Scribble630   630
+Scribble640   640
+Scribble650   650
+Scribble660   660
+Scribble670   670
+Scribble680   680
+Scribble690   690
+Scribble700   700
+Scribble710   710
+Scribble720   720
+Scribble730   730
+Scribble740   740
+Scribble750   750
+Scribble760   760
+Scribble770   770
+Scribble780   780
+Scribble790   790
+Scribble800   800
+Scribble810   810
+Scribble820   820
+Scribble830   830
+Scribble840   840
+Scribble850   850
+Scribble860   860
+Scribble870   870
+Scribble880   880
+Scribble890   890
+Scribble900   900
+Scribble910   910
+Scribble920   920
+Scribble930   930
+Scribble940   940
+Scribble950   950
+Scribble960   960
+Scribble970   970
+Scribble980   980
+Scribble990   990
+Scribble1000   1000
+Scribble1010   1010
+Scribble1020   1020
+Scribble1030   1030
+Scribble1040   1040
+Scribble1050   1050
+Scribble1060   1060
+Scribble1070   1070
+Scribble1080   1080
+Scribble1090   1090
+Scribble1100   1100
+Scribble1110   1110
+Scribble1120   1120
+Scribble1130   1130
+Scribble1140   1140
+Scribble1150   1150
+Scribble1160   1160
+Scribble1170   1170
+Scribble1180   1180
+Scribble1190   1190
+Scribble1200   1200
+Scribble1210   1210
+Scribble1220   1220
+Scribble1230   1230
+Scribble1240   1240
+Scribble1250   1250
+Scribble1260   1260
+Scribble1270   1270
+Scribble1280   1280
+Scribble1290   1290
+Scribble1300   1300
+Scribble1310   1310
+Scribble1320   1320
+Scribble1330   1330
+Scribble1340   1340
+Scribble1350   1350
+Scribble1360   1360
+Scribble1370   1370
+Scribble1380   1380
+Scribble1390   1390
+Scribble1400   1400
+Scribble1410   1410
+Scribble1420   1420
+Scribble1430   1430
+Scribble1440   1440
+Scribble1450   1450
+Scribble1460   1460
+Scribble1470   1470
+Scribble1480   1480
+Scribble1490   1490
+Scribble1500   1500
+Scribble1510   1510
+Scribble1520   1520
+Scribble1530   1530
+Scribble1540   1540
+Scribble1550   1550
+Scribble1560   1560
+Scribble1570   1570
+Scribble1580   1580
+Scribble1590   1590
+Scribble1600   1600
+Scribble1610   1610
+Scribble1620   1620
+Scribble1630   1630
+Scribble1640   1640
+Scribble1650   1650
+Scribble1660   1660
+Scribble1670   1670
+Scribble1680   1680
+Scribble1690   1690
+Scribble1700   1700
+Scribble1710   1710
+Scribble1720   1720
+Scribble1730   1730
+Scribble1740   1740
+Scribble1750   1750
+Scribble1760   1760
+Scribble1770   1770
+Scribble1780   1780
+Scribble1790   1790
+Scribble1800   1800
+Scribble1810   1810
+Scribble1820   1820
+Scribble1830   1830
+Scribble1840   1840
+Scribble1850   1850
+Scribble1860   1860
+Scribble1870   1870
+Scribble1880   1880
+Scribble1890   1890
+Scribble1900   1900
+Scribble1910   1910
+Scribble1920   1920
+Scribble1930   1930
+Scribble1940   1940
+Scribble1950   1950
+Scribble1960   1960
+Scribble1970   1970
+Scribble1980   1980
+

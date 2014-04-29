@@ -1,0 +1,42 @@
+Bugs in ZipWorker.pas
+  OpenEOC
+        if not (i + SizeOf(ZipEndOfCentral) + EOC.ZipCommentLen -
+          Size = 0) then
+          Inc(FFileSize, (i + SizeOf(ZipEndOfCentral) +
+            Cardinal(EOC.ZipCommentLen)) - Size); 
+          // Now we need a check for WinZip Self Extractor which makes SFX files which
+          // allmost always have garbage at the end (Zero filled at 512 byte boundary!)
+          // In this special case 'we' don't give a warning.
+          ShowGarbageMsg := True;
+          if (FRealFileSize - Cardinal(FFileSize) < 512) { and ((FRealFileSize mod
+          512) = 0)} then
+          begin
+            j := i + SizeOf(ZipEndOfCentral) + EOC.ZipCommentLen;
+            while (ZipBuf[j] < '/' {= #0}) and (j <= Size) do
+              Inc(j);
+            if j = Size + 1 then
+              ShowGarbageMsg := False;
+          end;
+'if' Calculation can cause Overflow error plus is inefficient
+'inc(FFileSize, ' can give Overflow error
+'while' can cause Range Error because tests in wrong order
+
+        if (i + SizeOf(ZipEndOfCentral) + EOC.ZipCommentLen) <> Size then
+          begin
+//          Inc(FFileSize, (i + SizeOf(ZipEndOfCentral) +
+//            Cardinal(EOC.ZipCommentLen)) - Size);
+          FFileSize := FFileSize + (i + SizeOf(ZipEndOfCentral) +
+            Cardinal(EOC.ZipCommentLen)) - Size;
+          // Now we need a check for WinZip Self Extractor which makes SFX files which
+          // allmost always have garbage at the end (Zero filled at 512 byte boundary!)
+          // In this special case 'we' don't give a warning.
+          ShowGarbageMsg := True;
+          if (FRealFileSize - Cardinal(FFileSize) < 512) { and ((FRealFileSize mod
+          512) = 0)} then
+            j := i + SizeOf(ZipEndOfCentral) + EOC.ZipCommentLen;
+//            while (ZipBuf[j] < '/' {= #0}) and (j <= Size) do
+            while (j <= Size) and (ZipBuf[j] < '/' {= #0}) do
+              Inc(j);
+            if j = Size + 1 then
+              ShowGarbageMsg := False;
+          end;

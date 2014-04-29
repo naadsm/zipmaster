@@ -1,0 +1,213 @@
+#include "ZipMsg.h"
+
+// CATALAN - Translated by Jordi March (march_ribot@teleline.es)  12/14/2000
+//           Updated by Xavier Mor-Mur (xmormur@telepolis.com)    18/06/2003  15/07/2004  30/09/2004  03/11/2004
+
+STRINGTABLE {
+
+GE_FatalZip,         "Error Fatal en ZipDLL.DLL: excepció avortar";
+GE_NoZipSpecified,   "Error - arxiu zip no especificat!";
+GE_NoMem,            "Memòria sol·licitada no disponible";
+GE_WrongPassword,    "Error - les claus d'accés no concorden \nClau d'accés ignorada";
+GE_CopyFile,         "Copiant: ";
+GE_Except,           "Exception in Event handler ";
+GE_Reentered,        "estaba en us, Les instruccions es pode haver perdut!";
+GE_Busy,             " En us, Espereu si us plau";
+GE_Inactive,         "no Actiu";
+GE_RangeError,       "Index (%d) fora de rang 1..%d";
+GE_TempZip,          "Fitxer zip temporal: %s";
+GE_WasBusy,          "En us + %s";
+GE_EventEx,          "Excepció en l'Event ";
+GE_Unknown,          " Error desconegut %d";
+GE_DLLAbort,         "DLL Error - Abortan";
+GE_DLLBusy,          "DLL Error - En us";
+GE_DLLCancel,        "DLL Error - Cancel·lació per l'Usuari";
+GE_DLLMem,           "DLL Error - Memoria insuficient";
+GE_DLLStruct,        "DLL Error - Estructura incorrecte";
+GE_DLLEvent,         "DLL Error - Excepció en el handler ";
+GE_DLLCritical,      "Error critic de la DLL %d";
+
+RN_ZipSFXData,       "Error mentre es copiava l'encapçalament SFX";
+RN_NoRenOnSpan,      "El canvi de nom no es suportat per un arxiu zip repartit";
+RN_ProcessFile,      "Processant: ";
+RN_RenameTo,         " renomenat a: ";
+RN_InvalidDateTime,  "Argument data/hora incorrecte per el fitxer: ";
+
+PW_UnatAddPWMiss,    "Error - no s'ha donat la contrasenya per a afegir";
+PW_UnatExtPWMiss,    "Error - no s'ha donat la contrasenya per a extraure";
+PW_Ok,               "&D'acord";
+PW_Cancel,           "&Cancel·lar";
+PW_Caption,          "Contrasenya";
+PW_MessageEnter,     "Entra la contrasenya ";
+PW_MessageConfirm,   "Confirma la contrasenya ";
+PW_CancelAll,        "Cancel·lar tot";
+PW_Abort,            "Avortar";
+PW_ForFile,          " per l'arxiu: ";
+
+CF_SourceIsDest,     "L'arxiu font és el mateix que el de destí!";
+CF_OverwriteYN,      "Rescriure l'arxiu '%s' amb '%s' ?";
+CF_CopyFailed,       "Ha fallat la copia de l'arxiu des de '%s' a '%s'";
+CF_SourceNotFound,   "L'arxiu '%s' no es troba a '%s'!";
+CF_SFXCopyError,     "Error mentre es copiava les dades del SFX";
+CF_DestFileNoOpen,   "L'arxiu zip de destí no ha pogut ser obert!";
+CF_NoCopyOnSpan,     "CopyZippedFiles no està implementat per a fitxers zip partits";
+
+LI_ReadZipError,     "Error de recerca llegint l'arxiu zip!";
+LI_ErrorUnknown,     "Error desconegut en la funció List()\n";
+LI_WrongZipStruct,   "Precaució - Error en l'estructura del zip!";
+LI_GarbageAtEOF,     "Precaució - Brossa al final de l'arxiu zip!";
+LI_FileTooBig,       "File larger than 4GB";
+LI_MethodUnknown,    "Unknown Compression Method";
+
+ZB_Yes,              "&Yes";
+ZB_No,               "&No";
+ZB_OK,               "&OK";
+ZB_Cancel,           "&Cancel";
+ZB_Abort,            "&Abort";
+ZB_Retry,            "&Retry";
+ZB_Ignore,           "&Ignore";
+ZB_CancelAll,        "CancelAll";
+ZB_NoToAll,          "NoToAll";
+ZB_YesToAll,         "YesToAll";
+//  ZB_Help,         "Help";
+
+AD_NothingToZip,     "Error - no hi ha arxius a comprimir!";
+AD_UnattPassword,    "L'acció desatesa no és possible sense contrasenya";
+AD_NoFreshenUpdate,  "Afegir/Refrescar o Afegir/Actualitzar no és possible en un arxiu trossejat";
+AD_AutoSFXWrong,     "Error %.1d succeït durant la creació d'un SFX autoextraïble";
+//AD_NoStreamDLL,    "Error - el teu ZipDLL.dll no pot usar streams, per favor actualitza'l a una versió >= 1.60";
+AD_InIsOutStream,    "L'stream d'entrada no pot ser assignat a l'stream de sortida";
+AD_InvalidName,      "Els comodins (*) no són permesos en el nom o en l'especificació d'un arxiu";
+AD_NoDestDir,        "El directori destí '%s' ha d'existir!";
+
+DL_NothingToDel,     "Error - no s'han seleccionat arxius per a esborrar";
+DL_NoDelOnSpan,      "Esborrar fitxers no està implementat per a fitxers zip trossejat";
+
+EX_FatalUnZip,       "Error Fatal en UnzDLL.DLL: excepció d'avortament";
+EX_UnAttPassword,    "Precaució - Extracció desatesa: possiblement no tots els arxius s'hagin extret";
+EX_NoStreamDLL,      "Error - el teu UnzDLL.dll no pot usar streams, per favor actualitza'l a una versió >= 1.60";
+EX_NoExtrDir,        "El directori d'extracció '%s' ha de existir";
+
+//LZ_ZipDllLoaded,   "ZIP DLL carregat";
+//LZ_NoZipDllExec,   "Funció ZipDllExec no trobada a ZIPDLL.DLL!";
+//LZ_NoZipDllVers,   "Funció GetZipDllVersion no trobada a ZIPDLL.DLL!";
+//LZ_NoZipDll,       "ZIPDLL.DLL no trobat!";
+//LZ_OldZipDll,      "S'ha intentat carregar un ZipDll antic des de ";
+//LZ_ZipDllUnloaded, "Zip DLL no carregat";
+
+LD_NoDll,            "Error carregant %s";
+LD_BadDll,           "Impossible carregar %s - Es una versió antiga o malmesa";
+LD_DllLoaded,        "Carregat ";
+LD_DllUnloaded,      "Descarregat ";
+
+//LU_UnzDllLoaded,   "UNZDLL carregat!";
+//LU_NoUnzDllExec,   "Funció UnzDllExec no trobada a UNZDLL.DLL!";
+//LU_NoUnzDllVers,   "Funció GetUnzDllVersion no trobada a UNZDLL.DLL!";
+//LU_NoUnzDll,       "UNZDLL.DLL no trobat!";
+//LU_OldUnzDll,      "S'ha intentat carregar un UnzDll antic des de ";
+//LU_UnzDllUnloaded, "Unz DLL no carregat";
+
+SF_StringToLong,     "Error - Una o més de les 4 propietats anomenades a continuació sobrepassen 255 caràcters!";
+SF_NoZipSFXBin,      "Error - ZIPSFX.BIN no trobat!";
+SF_InputIsNoZip,     "Error: l'arxiu d'entrada no és un arxiu zip";
+SF_NoSFXSupport,     "Funcions SFX no suportades";
+SF_MsgTooLong,       "SFX El misatge excedeix els 255 caracters!";
+SF_DefPathTooLong,   "SFX El path per defecte excedeix els 255 caracters!";
+SF_DlgTitleTooLong,  "SFX El titol excedeix els 255 caracters!";
+SF_CmdLineTooLong,   "SFX La Línia d'ordres excedeix els 255 caracters!";
+SF_FBkPathTooLong,   "SFX El path Fallback excedeix els 255 caracters!";
+
+CZ_NoExeSpecified,   "Error - no s'ha especificat l'arxiu .EXE";
+CZ_InputNotExe,      "Error: l'arxiu d'entrada no és un arxiu .EXE";
+CZ_SFXTypeUnknown,   "Error determinant el tipus d'arxiu SFX (autoextraïble)";
+
+DS_NoInFile,         "L'arxiu d'entrada no existeix";
+DS_FileOpen,         "L'arxiu zip no pot ser obert";
+DS_NotaDrive,        "No és una unitat vàlida: %s";
+DS_DriveNoMount,     "La unitat %s NO està definida";
+DS_NoVolume,         "No es pot escriure l'etiqueta de volum";
+DS_NoMem,            "No hi ha suficient memòria per a mostrar MsgBox";
+DS_Canceled,         "Operació cancel·lada per l'Usuari";
+DS_FailedSeek,       "Error de posicionament en l'arxiu d'entrada";
+DS_NoOutFile,        "Ha fallat la creació de l'arxiu de sortida";
+DS_NoWrite,          "Error d'escriptura en l'arxiu de sortida";
+DS_EOCBadRead,       "Error llegint el Final del Directori Central";
+DS_LOHBadRead,       "Error llegint la Capçalera local";
+DS_CEHBadRead,       "Error llegint la Capçalera central";
+DS_LOHWrongSig,      "Una signatura de la Capçalera local és errònia";
+DS_CEHWrongSig,      "Una signatura de la Capçalera central és errònia";
+DS_LONameLen,        "Error llegint el nom d'arxiu local";
+DS_CENameLen,        "Error llegint el nom d'arxiu central";
+DS_LOExtraLen,       "Error llegint el camp local extra";
+DS_CEExtraLen,       "Error llegint el camp central extra";
+DS_DataDesc,         "Error llegint/escrivint àrea de descriptor de dades";
+DS_ZipData,          "Error llegint dades comprimides";
+DS_CECommentLen,     "Error llegint un comentari de fitxer";
+DS_EOArchComLen,     "Error llegint el comentari d'arxiu";
+DS_ErrorUnknown,     "Error desconegut en la funció ReadSpan(), WriteSpan(), Rename() o CopyZippedFiles()\n";
+DS_NoUnattSpan,      "El trossejat en forma desatesa no està implementat";
+DS_EntryLost,        "No s'ha trobat una capçalera local en l'estructura interna";
+DS_NoTempFile,       "No s'ha pogut creat l'arxiu temporal";
+DS_LOHBadWrite,      "Error escrivint la capçalera local";
+DS_CEHBadWrite,      "Error escrivint la capçalera central";
+DS_EOCBadWrite,      "Error escrivint la Fi del Directori Central";
+DS_ExtWrongSig,      "Error llegint la signatura local estesa";
+DS_NoDiskSpace,      "Aquest disc no té suficient espai lliure disponible";
+DS_InsertDisk,       "Per favor insereix l'últim disc";
+DS_InsertVolume,     "Per favor insereix el disc %.1d de %.1d";
+DS_InDrive,          "\nen la unitat: %s";
+DS_NoValidZip,       "Aquest no és un arxiu zip vàlid";
+DS_FirstInSet,       "Aquest és el primer d'un joc de discos,\nper favor insereix l'últim disc d'aquest joc";
+DS_NotLastInSet,     "Aquest és el disc %d d'un joc de discos,\nper favor insereix l'últim disc d'aquest joc";
+DS_AskDeleteFile,    "Ja existeix un arxiu %s\nDesitja rescriure aquest arxiu?";
+DS_AskPrevFile,      "ATENCIÓ: Aquest és el disc previ núm.. %d!!!\nEstà segur que desitja rescriure el seu contingut?";
+DS_NoSFXSpan,        "Error - Els arxius autodescomprimibles (.exe) no poden ser trossejats";
+DS_CEHBadCopy,       "Error copiant el nom d'arxiu d'una estructura CEH";
+DS_EOCBadSeek,       "Error de posicionament en una estructura EOC";
+DS_EOCBadCopy,       "Error copiant el comentari de l'arxiu zip";
+DS_FirstFileOnHD,    "Aquest és el primer arxiu en un joc de discos.\nPer favor escull l'últim d'aquest joc";
+DS_InsertAVolume,    "Per favor insereix el volum de disc %.1d";
+DS_CopyCentral,      "Directori central";
+DS_NoDiskSpan,       "El trossejat a diferents discs no està suportat";
+DS_UnknownError,     "Error desconegut";
+DS_NoRenamePart,     "L'última part guardade com : %s";
+
+FM_Erase,            "Eliminar ";
+FM_Confirm,          "Confirmar";
+ 
+ED_SizeTooLarge,     "El tamany de FileExtraData es mes gran que el vector disponible";
+
+CD_NoCDOnSpan,       "ChangeFileDetails is not implemented for a spanned zip file";
+CD_NoEventHndlr,     "No Event Handler found to Change File Details";
+CD_LOExtraLen,       "Error while writing a local extra field";
+CD_CEExtraLen,       "Error while writing a central extra field";
+CD_CEComLen,         "Error while writing a file comment";
+CD_FileName,         "No FileName in changed file details";
+CD_CEHDataSize,      "The combined length of CEH + FileName + FileComment + ExtraData exceeds 65535";
+CD_Changing,         "Changing details of: ";
+CD_DuplFileName,     "Duplicate Filename: %s";
+CD_NoProtected,      "Cannot change details of Excrypted file";
+CD_InvalidFileName,  "Invalid Filename: '%s'";
+CD_NoChangeDir,      "Cannot change path";
+CD_FileSpecSkip,     "Filespec '%s' skipped";
+
+PR_Archive,          "*Resetejan el bit d'archive";
+PR_CopyZipFile,      "*Copian el fitxer Zip";
+PR_SFX,              "*SFX";
+PR_Header,           "*??";
+PR_Finish,           "*Finalitzan";
+PR_Copying,          "*Copian";
+PR_CentrlDir,        "*Directori Central";
+PR_Checking,         "*Testejant";
+PR_Loading,          "*Carregan Directori";
+PR_Joining,          "*Joining split zip file";
+PR_Splitting,        "*Splitting zip file";
+
+WZ_DropDirOnly,      "Eliminant %d entrades de directori vuides";
+WZ_NothingToWrite,   "Res pes escriure";
+
+TM_Erasing,          "EraseFloppy - Esborrant %s";
+TM_Deleting,         "EraseFloppy - Eliminant %s";
+TM_GetNewDisk,       "Traça : GetNewDisk Obrint: %s";
+
+}

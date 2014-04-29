@@ -1,0 +1,19 @@
+/* ResDlls.rc              */
+/*  machine generated      */
+/*   Do NOT edit           */
+/* ZipMaster 1.78.2.2      */
+/* Copyright (c) 2005      */
+
+#define  RDLL_Zip  11605
+#define  RDLL_Unz  11606
+#define  RDLL_ZVer 11607
+#define  RDLL_UVer 11608
+
+RDLL_Zip BinFile LOADONCALL MOVEABLE DISCARDABLE "zipdll.bin"
+
+RDLL_Unz BinFile LOADONCALL MOVEABLE DISCARDABLE "unzdll.bin"
+
+STRINGTABLE {
+	RDLL_ZVer, "17862"
+	RDLL_UVer, "17821"
+}

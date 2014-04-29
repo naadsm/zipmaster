@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="..\ZipDll.dll"/>
+    <OBJFILES value="Temp\Enter.obj Temp\PassMsg.obj Temp\Crypt.obj Temp\Bits.obj 
+      Temp\Win32Zip.obj Temp\ZipUp.obj Temp\dllzip.obj Temp\Crc32.obj 
+      Temp\CrcTab.obj Temp\Deflate.obj Temp\Globals.obj Temp\Trees.obj 
+      Temp\Util.obj Temp\Win32.obj Temp\DllInform.obj Temp\lngmtch.obj 
+      Temp\FileIO.obj Temp\ZipFile.obj Temp\DllMain.obj Temp\zqsort.obj 
+      Temp\DllClBk.obj"/>
+    <RESFILES value="ZipDll.res"/>
+    <DEFFILE value="ZipDLL.def"/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="rtl.lib"/>
+    <SPARELIBS value="rtl.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="WIN32;_WINDOWS;NDEBUG;MULTITHREAD;USE_STRM_INPUT;USE_STRM_OUTPUT;_USE_ASM_"/>
+    <SYSDEFINES value="NO_STRICT;_NO_VCL"/>
+    <MAINSOURCE value="ZipDll.bpf"/>
+    <INCLUDEPATH value="e:\Builder;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="e:\Builder;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w8092 -w8091 -w8090 -w8089 -w8087 -wprc -wstv -wstu -wsig -wpin -wnod 
+      -wdef -wcln -wbbf -wasm -wamp -wamb"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-WD -O2 -Q -Vx -Ve -X- -a1 -5 -b- -k- -vi -tWD -tWM -c"/>
+    <PFLAGS value="-N2Temp -N0Temp -$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-ITemp -D&quot;&quot; -aa -Tpd -GD -s -Gn -b:0x4C00000"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0d32.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cw32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="ZipDll.res" FORMNAME="" UNITNAME="ZipDll.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ZipDll.bpf" FORMNAME="" UNITNAME="ZipDll" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Enter.c" FORMNAME="" UNITNAME="Enter" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ZipDLL.def" FORMNAME="" UNITNAME="ZipDLL.def" CONTAINERID="DefTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PassMsg.c" FORMNAME="" UNITNAME="PassMsg.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Crypt.c" FORMNAME="" UNITNAME="Crypt.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Bits.c" FORMNAME="" UNITNAME="Bits.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Win32Zip.c" FORMNAME="" UNITNAME="Win32Zip.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ZipUp.c" FORMNAME="" UNITNAME="ZipUp.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="dllzip.c" FORMNAME="" UNITNAME="dllzip.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Crc32.c" FORMNAME="" UNITNAME="Crc32.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CrcTab.c" FORMNAME="" UNITNAME="CrcTab.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Deflate.c" FORMNAME="" UNITNAME="Deflate.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Globals.c" FORMNAME="" UNITNAME="Globals.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Trees.c" FORMNAME="" UNITNAME="Trees.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Util.c" FORMNAME="" UNITNAME="Util.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Win32.c" FORMNAME="" UNITNAME="Win32.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DllInform.c" FORMNAME="" UNITNAME="DllInform.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lngmtch.c" FORMNAME="" UNITNAME="lngmtch.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FileIO.c" FORMNAME="" UNITNAME="FileIO.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ZipFile.c" FORMNAME="" UNITNAME="ZipFile.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DllMain.c" FORMNAME="" UNITNAME="DllMain.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="zqsort.c" FORMNAME="" UNITNAME="zqsort" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DllClBk.c" FORMNAME="" UNITNAME="DllClBk" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <FILES>
+    <FILE type="override" value="zqsort.c" translator="Auto">
+      <CFLAG1 value=" -O2 -a4"/>
+    </FILE>
+  </FILES>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=1
+MinorVer=78
+Release=6
+Build=2
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=1
+Locale=1033
+CodePage=1200
+
+[Version Info Keys]
+CompanyName=
+FileDescription=ZipDLL
+FileVersion=1.78.6.2
+InternalName=ZipDLL
+LegalCopyright=Copyright © 2002, Eric W. Engler
+LegalTrademarks=Uses code from InfoZip's ZIP
+OriginalFilename=ZipDLL.dll
+ProductName=Delphi Zip
+ProductVersion=1.78
+Comments=Freeware Delphi Zip DLL
+
+[Excluded Packages]
+d:\b6\Bin\dcl31w60.bpl=Delphi 1.0 Compatibility Components
+d:\b6\Bin\dclbcbsmp60.bpl=Borland Sample Controls Design Time Package
+d:\b6\Projects\Bpl\User.bpl=User Controls
+d:\b6\Bin\dclmlwiz60.bpl=Borland Markup Language Wizards
+D:\B6\Bin\dcldb60.bpl=Borland Database Components
+d:\b6\Bin\applet60.bpl=Borland Control Panel Applet Package
+d:\b6\Bin\dclsmpedit60.bpl=Borland Editor Script Enhancements
+d:\b6\Bin\dclemacsedit60.bpl=Borland Editor Emacs Enhancements
+d:\b6\Bin\bcbie60.bpl=Borland C++Builder Internet Explorer 5 Components Package
+d:\b6\Projects\Bpl\TMSC6.bpl=TMS Component Pack
+d:\b6\Bin\bcb2kaxserver60.bpl=Borland C++Builder COM Server Components Sample Package
+d:\b6\Bin\dclact60.bpl=Borland ActionBar Components
+d:\b6\Bin\dclado60.bpl=Borland ADO DB Components
+d:\b6\Bin\dclqrt60.bpl=QuickReport Components
+D:\WINDOWS\system32\ibevnt60.bpl=Borland Interbase Event Alerter Component
+d:\b6\Bin\dclbde60.bpl=Borland BDE DB Components
+D:\B6\Bin\dbx60.bpl=Borland SQL Explorer UI Package
+d:\b6\Bin\dclcds60.bpl=Borland Base Cached ClientDataset Component
+D:\B6\Bin\dclmid60.bpl=Borland MyBase DataAccess Components
+d:\b6\Bin\dclbdecds60.bpl=Borland Local BDE ClientDataset Components
+d:\b6\Bin\dcltee60.bpl=TeeChart Components
+d:\b6\Bin\dcltqr60.bpl=TeeChart for QuickReport Components
+d:\b6\Bin\dclib60.bpl=InterBase Data Access Components
+d:\b6\Bin\dclclxdb60.bpl=Borland CLX Database Components
+D:\B6\Bin\dclclxstd60.bpl=Borland CLX Standard Components
+d:\b6\Bin\dclnet60.bpl=Borland Internet Components
+d:\b6\Bin\DBWEBXPRT.BPL=Borland Web Wizard Package
+d:\b6\Bin\DCLNMF60.bpl=NetMasters Fastnet Tools
+d:\b6\Bin\dclsoap60.bpl=Borland SOAP Components
+d:\b6\Bin\dclocx60.bpl=Borland Sample Imported ActiveX Controls
+d:\b6\Bin\dclite60.bpl=Borland Integrated Translation Environment
+d:\b6\Bin\dcldbx60.bpl=Borland dbExpress Components
+d:\b6\Bin\dcldbxcds60.bpl=Borland Local DBX ClientDataset Components
+d:\b6\Bin\dclindy60.bpl=Internet Direct (Indy) for D6 Property and Component Editors
+
+[HistoryLists\hlIncludePath]
+Count=4
+Item0=e:\Builder;$(BCB)\include;$(BCB)\include\vcl
+Item1=$(BCB)\include;$(BCB)\include\vcl
+Item2=$(BCB)\include;$(BCB)\include\vcl;C:\DelphiZip\ZipMstr1770\DLL\ZipDLL
+Item3=C:\DelphiZip\ZipMstr1770\DLL\ZipDLL;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=6
+Item0=e:\Builder;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item1=$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item2=$(BCB)\Projects\Lib;C:\DelphiZip\ZipMstr1770\DLL\ZipDLL;$(BCB)\lib\obj;$(BCB)\lib
+Item3=$(BCB)\TMSPack\BCB6;$(BCB)\Projects\Lib;C:\DelphiZip\ZipMstr1760\DLL\ZipDLL;$(BCB)\lib\obj;$(BCB)\lib
+Item4=C:\DelphiZip\ZipMstr1760\DLL\ZipDLL;$(BCB)\lib\obj;$(BCB)\lib
+Item5=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=2
+Item0=$(BCB)\source\vcl;E:\DelphiZip\ZipMstr1780\VCL\
+Item1=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=9
+Item0=WIN32;_WINDOWS;NDEBUG;MULTITHREAD;USE_STRM_INPUT;USE_STRM_OUTPUT;_USE_ASM_
+Item1=WIN32;_WINDOWS;NDEBUG;MULTITHREAD;USE_STRM_INPUT;USE_STRM_OUTPUT;_USE_ASM_;_DEBUG
+Item2=WIN32;_WINDOWS;NDEBUG;MULTITHREAD;USE_STRM_INPUT;USE_STRM_OUTPUT;_USE_ASM_;_DEBUG;DEBUG
+Item3=WIN32;_WINDOWS;NDEBUG;USE_STRM_INPUT;MULTITHREAD;_USE_ASM_;_DEBUG
+Item4=WIN32;_WINDOWS;NDEBUG;USE_STRM_INPUT;MULTITHREAD;_USE_ASM_;_DEBUG;DEBUG
+Item5=WIN32;_WINDOWS;NDEBUG;USE_STRM_INPUT;MULTITHREAD;_USE_ASM_
+Item6=WIN32;_WINDOWS;NDEBUG;USE_STRM_INPUT;MULTITHREAD;_USE_ASM_x
+Item7=_DEBUG;WIN32;_WINDOWS;NDEBUG;USE_STRM_INPUT;MULTITHREAD;_USE_ASM_
+Item8=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=2
+Item0=Temp
+Item1=Temp\
+
+[HistoryLists\hlFinalOutputDir]
+Count=1
+Item0=..\
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl;E:\DelphiZip\ZipMstr1780\VCL\
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=E:\DelphiZip\ZipMstr1790\DLL\Test1.exe
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[Linker]
+LibPrefix=
+LibSuffix=
+LibVersion=
+  </IDEOPTIONS>
+</PROJECT>

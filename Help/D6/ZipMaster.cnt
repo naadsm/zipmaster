@@ -1,0 +1,139 @@
+;This help file was created with HelpScribble 7.4.0
+;Licensed to: Russell Peters
+
+:BASE ZipMaster.hlp
+:TITLE ZipMaster Component Help
+:LINK DEL6VCL.HLP
+1 TZipMaster component
+2 General information =Scribble10
+2 Error and warning messages=Scribble1860
+2 Copyright, Contact information, Bug reports and more
+3 Contact information=TZipMaster_Contact
+3 Bug reports and other information=Scribble30
+3 Licence=Scribble70
+2 Changes
+3 Version 1.78=Scribble80
+3 Version 1.77=Scribble90
+3 Version 1.76=Scribble90
+3 Version 1.73=Scribble100
+3 Version 1.72=Scribble110
+2 Properties
+3 Properties=Scribble150
+3 AddCompLevel =Scribble280
+3 AddOptions =Scribble310
+3 AddStoreSuffixes=Scribble320
+3 Cancel =Scribble340
+3 CodePage=Scribble350
+3 ConfirmErase=Scribble370
+3 Count =Scribble380
+3 DirEntry=Scribble210
+3 DLLDirectory =Scribble400
+3 ErrCode =Scribble420
+3 ExtAddStoreSuffixes=Scribble330
+3 ExtrBaseDir =Scribble450
+3 ExtrOptions =Scribble470
+3 FSpecArgs =Scribble480
+3 FSpecArgsExcl=Scribble490
+3 FullErrCode=Scribble500
+3 Handle =Scribble520
+3 HowToDelete=Scribble530
+3 IsSpanned=Scribble540
+3 KeepFreeOnDisk1=Scribble560
+3 KeepFreeOnAllDisks=Scribble580
+3 MaxVolumeSize=Scribble620
+3 Message =Scribble600
+3 MinFreeVolumeSize=Scribble630
+3 NotMainThread=Scribble640
+3 Password =Scribble650
+3 PasswordReqCount=Scribble670
+3 RootDir=Scribble680
+3 SFXCaption =Scribble690
+3 SFXCommandLine =Scribble700
+3 SFXDefaultDir =Scribble710
+3 SFXIcon=Scribble720
+3 SFXMessage=Scribble730
+3 SFXOffset=Scribble740
+3 SFXOptions =Scribble750
+3 SFXOverWriteMode =Scribble760
+3 SFXPath =Scribble770
+3 SFXSlave=Scribble160
+3 SuccessCnt =Scribble780
+3 TempDir=Scribble790
+3 TotalSizeToProcess=Scribble800
+3 Trace =Scribble810
+3 Unattended=Scribble830
+3 UnzBusy =Scribble850
+3 UnzVers =Scribble860
+3 Verbose =Scribble890
+3 ZipBusy =Scribble910
+3 ZipComment=Scribble920
+3 ZipContents =Scribble930
+3 ZipEOC=Scribble1000
+3 ZipFileName=Scribble1020
+3 ZipFileSize=Scribble1030
+3 ZipSOC=Scribble1040
+3 ZipStream=Scribble1060
+3 ZipVers =Scribble1080
+2 Methods
+3 Methods=Scribble230
+3 Add =Scribble1090
+3 AddStreamToFile=Scribble1110
+3 AddStreamToStream=Scribble1120
+3 AppendSlash=Scribble1140
+3 Busy=Scribble130
+3 ConvertSFX =Scribble1150
+3 ConvertZIP =Scribble1170
+3 Copy_File=Scribble1200
+3 CopyZippedFiles=Scribble1210
+3 Delete =Scribble1230
+3 EraseFile=Scribble1240
+3 Extract =Scribble1250
+3 ExtractFileToStream=Scribble1260
+3 ExtractStreamToStream=Scribble1280
+3 FullVersionString=Scribble250
+3 GetAddPassword =Scribble1300
+3 GetExtrPassword =Scribble1320
+3 GetPassword=Scribble1340
+3 List =Scribble1390
+3 Load_Unz_Dll =Scribble1400
+3 Load_Zip_Dll =Scribble1410
+3 PathConcat=Scribble240
+3 ReadSpan=Scribble1430
+3 Rename=Scribble1450
+3 ShowZipMessage=Scribble1460
+3 Unload_Unz_Dll =Scribble1480
+3 Unload_Zip_Dll =Scribble1490
+3 WriteSpan=Scribble1500
+2 Events
+3 Events=Scribble270
+3 OnAfterCallback=Scribble1885
+3 OnCheckTerminate=Scribble1880
+3 OnCopyZipOverwrite=Scribble1530
+3 OnCRC32Error=Scribble1550
+3 OnDirUpdate =Scribble1560
+3 OnExtractOverwrite=Scribble1570
+3 OnExtractSkipped=Scribble1580
+3 OnFileComment=Scribble1590
+3 OnGetNextDisk=Scribble1600
+3 OnItemProgress=Scribble1810
+3 OnMessage =Scribble1610
+3 OnNewName=Scribble1630
+3 OnPasswordError=Scribble1650
+3 OnProgress =Scribble1670
+3 OnProgressDetails=Scribble1690
+3 OnSetNewName=Scribble1720
+3 OnSetAddName=Scribble1730
+3 OnSetExtName=Scribble1740
+3 OnTick=Scribble1750
+3 OnTotalProgress=Scribble1790
+3 OnStatusDisk=Scribble1830
+3 OnZipDialog=Scribble1770
+3 OnZipStr=Scribble1760
+2 Utility Functions
+3 DelimitPath=Scribble1940>main
+3 DirExists=Scribble1950>main
+3 FilenameMatch=Scribble1910>main
+3 IsWild=Scribble1960>main
+3 PathConcat=Scribble1900>main
+3 QueryZip=Scribble1980>main
+3 SetSlash=Scribble1930>main

@@ -1,0 +1,6 @@
+VERSION 4.0
+EXPORTS
+ DllEntryPoint
+ ZipDllExec
+ GetZipDllPrivVersion
+ GetZipDllVersion;

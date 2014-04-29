@@ -1,0 +1,42 @@
+#include "ZipMsg.h"
+
+STRINGTABLE {
+
+EX_NoExtrDir			"Extract directory must exist"
+
+PR_Archive         "*Resetting Archive bit"
+PR_CopyZipFile     "*Copying Zip File"
+PR_SFX             "*SFX"
+PR_Header          "*??"
+PR_Finish          "*Finalising"
+PR_Copying          "*Copying"
+PR_CentrlDir       "*Central Directory"
+PR_Initializing			"*Initializing"
+/*
+CD_NoCDOnSpan,    "ChangeFileDetails is not implemented for a spanned zip file"
+CD_NoEventHndlr   "No Event Handler found to Change File Details"
+CD_LOExtraLen     "Error while writing a local extra field"
+CD_CEExtraLen     "Error while writing a central extra field"
+CD_CEComLen       "Error while writing a file comment"
+CD_FileName       "No FileName in changed file details"
+CD_CEHDataSize    "The combined length of CEH + FileName + FileComment + ExtraData exceeds 65535"
+CD_Changing       "Changing details of: "    */
+CD_DuplFileName   "Duplicate filename \"%s\" at %s" 
+CD_NoProtected    "Changing details of protected file is not allowed"
+CD_InvalidFileName "invalid Filename \"%s\""
+CD_NoChangeDir		 "Cannot change \"%s\""
+CD_FileSpecSkip   "Skipped %s" 
+
+EX_NoExtrDir      "Extraction directory must exist!"
+WZ_DropDirOnly    "Dropping %d empty directory entries" 
+WZ_NothingToWrite "Nothing to write"
+
+LD_NoDll					"Failed to load %s"
+LD_BadDll					"Unable to load %s - It is old or corrupt"
+LD_DllLoaded			"Loaded "
+LD_DllUnloaded		"Unloaded "
+
+}
+
+
+
